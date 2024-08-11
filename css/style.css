@@ -1,0 +1,78 @@
+:root {
+  --latte-background: rgb(239, 241, 245);
+  --latte-text: rgb(76, 79, 105);
+
+  --mocha-background: rgb(30, 30, 46);
+  --mocha-text: rgb(205, 214, 244);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-stretch: ultra-expanded;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+html {
+  background-color: var(--mocha-background);
+  color: var(--mocha-text);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70vw;
+  flex-wrap: nowrap;
+  gap: 4em;
+  margin-left: 4em;
+}
+
+#sidebar {
+  display: flex;
+  max-width: 12.5%;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.25em;
+}
+
+#form-submit {
+  margin-top: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.25em;
+}
+
+#sidebar > button,
+input[type="submit"],
+input[type="file"]::file-selector-button,
+select {
+  border: 1px solid #8f8f9d;
+  padding: 0.25em;
+}
+
+form > input,
+button {
+  font-size: 0.75em;
+}
+
+pre {
+  font-size: 8px;
+}
